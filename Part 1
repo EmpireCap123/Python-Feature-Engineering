@@ -1,0 +1,13 @@
+# Log transform to long tailed distributions
+# Polynomial transforms to non-linear distributions
+# Calculated Fields
+# Binning of variables - clustering
+# Correlations between variables - remove a variable/column
+# Add interactions for 2 variables
+# Calculate variable significance
+# - univariate relationship with dependent variable
+# - correlation with dependent variable (discernable pattern?)
+# - p value
+
+# standardized variables with standardized coefficients
+# change in Rsquared when variable is included/excluded
