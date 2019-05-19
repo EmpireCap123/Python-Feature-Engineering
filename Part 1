@@ -58,3 +58,6 @@ print(model.feature_importances_)
 from sklearn.preprocessing import scale
 stand_column_name = scale(df[‘column_name’])
 # change in Rsquared when variable is included/excluded
+
+# one hot encoding a categorical variable using pandas get_dummies
+features = pd.get_dummies(features)
