@@ -1,14 +1,19 @@
 # Log transform to long tailed distributions
 log_column_name = np.log(column_name)
+
 # Polynomial transforms to non-linear distributions
 https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
+
 # Calculated Fields
 df['new_column'] = df['column1']/df['column2']
+
 # Binning of variables - clustering
 pd.cut(df['column_name'], n) - n equals the number of bins
+
 # Correlations between variables - remove a variable/column
 df.corr() - this is correlation matrix for the entire dataframe
 np.corrcoef(x,y) - this is the correlation between x and y
+
 # Add interactions for 2 variables
 from sklearn.linear_model import LinearRegression
 from sklearn.cross_validation import cross_val_score
@@ -46,17 +51,21 @@ Top 10 interactions: [(‘RM’, ‘LSTAT’, 0.782), (‘TAX’, ‘RM’, 0.76
 from sklearn import datasets
 from sklearn import metrics
 from sklearn.ensemble import ExtraTreesClassifier
+
 # load the iris datasets
 dataset = datasets.load_iris()
+
 # fit an Extra Trees model to the data
 model = ExtraTreesClassifier()
 model.fit(dataset.data, dataset.target)
+
 # display the relative importance of each attribute
 print(model.feature_importances_)
 
 # standardized variables
 from sklearn.preprocessing import scale
 stand_column_name = scale(df[‘column_name’])
+
 # change in Rsquared when variable is included/excluded
 
 # one hot encoding a categorical variable using pandas get_dummies
